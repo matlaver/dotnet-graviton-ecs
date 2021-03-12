@@ -1,10 +1,16 @@
 ﻿@page
+@using System.Runtime.InteropServices
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-left">
+    <div class="text-centre">
+        <h1 class="display-4">.NET 5 running on Amazon ECS</h1>
+    </div>
+    <div class="text-left"></div>
+        <p>Operating System: @RuntimeInformation.OSDescription</p>
+        <p>Framework Version: @RuntimeInformation.FrameworkDescription (@RuntimeInformation.ProcessArchitecture)</p>
+    </div>
 </div>
