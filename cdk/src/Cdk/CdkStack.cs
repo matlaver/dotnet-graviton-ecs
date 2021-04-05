@@ -36,7 +36,7 @@ namespace Cdk
                     DesiredCount = 2,
                     TaskImageOptions = new ApplicationLoadBalancedTaskImageOptions
                     {
-                        Image =  ContainerImage.FromAsset(Path.Combine(Directory.GetCurrentDirectory(), @"../../../app")),                        
+                        Image =  ContainerImage.FromAsset(Path.Combine(Directory.GetCurrentDirectory(), @"../../app")),                        
                     }                             
                 }
             );
