@@ -27,7 +27,7 @@ export class CdkStack extends cdk.Stack {
                 DEPLOYED_DATE: Date.now().toLocaleString()
             }
         },
-        desiredCount: 1
+        desiredCount: 2
     });
 
     new cdk.CfnOutput(this, 'LoadBalancerDNS', { value: ecsService.loadBalancer.loadBalancerDnsName }); 
