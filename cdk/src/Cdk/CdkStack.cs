@@ -23,7 +23,7 @@ namespace Cdk
             cluster.AddCapacity("DefaultAutoScalingGroupCapacity",
                 new AddCapacityOptions
                 {
-                    InstanceType = new InstanceType("c6g.2xlarge"),
+                    InstanceType = new InstanceType("c6g.4xlarge"),
                     MachineImage = EcsOptimizedImage.AmazonLinux2(AmiHardwareType.ARM)
                 }
             );
