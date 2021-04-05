@@ -1,3 +1,4 @@
+using System.IO;
 using Amazon.CDK;
 using Amazon.CDK.AWS.EC2;
 using Amazon.CDK.AWS.ECS;
@@ -35,7 +36,7 @@ namespace Cdk
                     DesiredCount = 2,
                     TaskImageOptions = new ApplicationLoadBalancedTaskImageOptions
                     {
-                        Image =  ContainerImage.FromAsset(Path.Combine(Directory.GetCurrentDirectory(), @"../../../app"),                        
+                        Image =  ContainerImage.FromAsset(Path.Combine(Directory.GetCurrentDirectory(), @"../../../app")),                        
                     }                             
                 }
             );
